@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:sys="clr-namespace:System;assembly=mscorlib"
+              xmlns:selector="clr-namespace:HealthCare.Models;assembly=HealthCare" 
+              xmlns:BLEntry="clr-namespace:HealthCare.CustomeControls;assembly=HealthCare"  
+              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+              x:Class="HealthCare.Views.AppointmentBookingPage"
+              BackgroundColor="#E5E7EE"
+             Title="AppointmentBookingPage">
+    <ContentPage.Resources>
+        <!--MergedWith="tbdpg:UpcomingAppointmentPage"-->
+        <ResourceDictionary>
+            <!--<ResourceDictionary.MergedDictionaries>
+                <tbdpg:UpcomingAppointmentPage/>
+            </ResourceDictionary.MergedDictionaries>-->
+            <DataTemplate x:Key="LoadDoctorByDeptTemplate">
+                <ViewCell Height="120">
+                    <Frame HasShadow="true" Margin="5">
+                        <Grid  RowSpacing="0" ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <controls:CircleImage Source="{Binding ProfilePicture}"  Margin="0,0,0,10"  Aspect="AspectFill" VerticalOptions="Start" HorizontalOptions="Center">
+                                    <controls:CircleImage.WidthRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="Android, iOS">60</On>
+                                            <On Platform="WinPhone">75</On>
+                                        </OnPlatform>
+                                    </controls:CircleImage.WidthRequest>
+                                    <controls:CircleImage.HeightRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="Android, iOS">60</On>
+                                            <On Platform="WinPhone">75</On>
+                                        </OnPlatform>
+                                    </controls:CircleImage.HeightRequest>
+                                </controls:CircleImage>
+                                <!--<Image x:Name="imgProfielPic"                              
+                               HorizontalOptions="Center"
+                                Aspect="AspectFit"                             
+                               HeightRequest="60"
+                               VerticalOptions="Start"
+                               WidthRequest="60"
+                               Source="profile.png"/>-->
+                            </Grid>
+                            <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                                <StackLayout Orientation="Vertical" Spacing="0">
+                                    <Label x:Name="lbldocname"                                 
+                                   HorizontalTextAlignment="Start"
+                                   Text="{Binding DoctorName,StringFormat='Dr. {0}'}" FontSize="Medium" FontAttributes="Bold" TextColor="#3785C0"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label                                                                  
+                                               Text="{Binding QualificationName,StringFormat='{0},   '}"                                            
+                                               FontAttributes="Bold"
+                                               FontSize="Small"
+                                               LineBreakMode="NoWrap"
+                                               TextColor="Gray"/>
+                                        <Label x:Name="lblBookingid"                                                                  
+                                               Text="{Binding DepartmentName}"                                               
+                                               FontSize="Small"
+                                                LineBreakMode="TailTruncation"
+                                               TextColor="Gray"/>
+                                    </StackLayout>
+                                    <Label x:Name="lblasd"                                                                  
+                                               Text="{Binding HospitalName}"  
+                                               FontAttributes="Bold"
+                                               FontSize="Small"
+                                               TextColor="Gray"/>
+                                </StackLayout>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Image VerticalOptions="Start" Source="profile_2.png" HorizontalOptions="Center"/>
+                            </Grid>
+                        </Grid>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+            <selector:DocListByDepDataTemplateSelector x:Key="DoctorListListData" LoadDoctorByDeptTemplate="{StaticResource LoadDoctorByDeptTemplate}"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+    <ContentView x:Name="HomecontentView" ControlTemplate="{StaticResource MainPageTemplate}">
+            <Grid x:Name="rootlayout" RowSpacing="0" Margin="05,0,05,0" BackgroundColor="#E5E7EE">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.8*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" BackgroundColor="Transparent">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Image VerticalOptions="Center" HorizontalOptions="Center" Source="arrow_left_1.png"/>
+                            
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Label VerticalOptions="Center" 
+                                   VerticalTextAlignment="Center"
+                                   HorizontalOptions="Center" 
+                                   HorizontalTextAlignment="Center" 
+                                   Text="Book An Appointment" 
+                                   TextColor="#3983BC" 
+                                   FontSize="Large" 
+                                   FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid Grid.Column="2">
+                            <Image VerticalOptions="Center" HorizontalOptions="Center" Source="qrcode.png" Margin="0,0,10,0"/>
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                          Tapped="lblQRcode_Click"
+                       NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Frame HasShadow="true">
+                            <Grid RowSpacing="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="Gray">
+                                        <BLEntry:BorderLessPicker x:Name="txtreasonforvisit"  ItemDisplayBinding="{Binding ReasonForVisit}"  Title="Select Reason For Visit"  SelectedIndexChanged="txtreasonforvisit_SelectedIndexChanged" BackgroundColor="White" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                                            <BLEntry:BorderLessPicker.HeightRequest>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">40</On>
+                                                    <On Platform="Android">40</On>
+                                                </OnPlatform>
+                                            </BLEntry:BorderLessPicker.HeightRequest>
+                                        </BLEntry:BorderLessPicker>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="Gray">
+                                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                                <BLEntry:BorderlessDatePicker x:Name="dateOfAppointment"
+                                                 VerticalOptions="CenterAndExpand"
+                                                 HorizontalOptions="FillAndExpand"                                                                                                                                                        
+                                                Date="{x:Static sys:DateTime.Now}"
+                                                 MinimumDate="{x:Static sys:DateTime.Now}">
+                                                    <BLEntry:BorderlessDatePicker.HeightRequest>
+                                                        <OnPlatform x:TypeArguments="x:Double">
+                                                            <On Platform="iOS">40</On>
+                                                            <On Platform="Android">40</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:BorderlessDatePicker.HeightRequest>
+                                                    <BLEntry:BorderlessDatePicker.Margin>
+                                                        <OnPlatform x:TypeArguments="Thickness">
+                                                            <On Platform="iOS">2,0,5,0</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:BorderlessDatePicker.Margin>
+                                                    <DatePicker.Format>MM/dd/yyyy</DatePicker.Format>
+                                                    <!--<DatePicker.MinimumDate>
+                                                        <sys:DateTime x:FactoryMethod="Parse">
+                                                            <x:Arguments>
+                                                                <x:String>Jan 1 2000</x:String>
+                                                            </x:Arguments>
+                                                        </sys:DateTime>
+                                                    </DatePicker.MinimumDate>-->
+                                                    <!--<DatePicker.MaximumDate>
+                                                        <sys:DateTime x:FactoryMethod="Parse">
+                                                            <x:Arguments>
+                                                                <x:String>Dec 31 2090</x:String>
+                                                            </x:Arguments>
+                                                        </sys:DateTime>
+                                                    </DatePicker.MaximumDate>-->
+                                                </BLEntry:BorderlessDatePicker>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="Gray">
+                                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                                <BLEntry:BorderLessTimePicker 
+                                              x:Name="AppointmentTime"
+                                              VerticalOptions="CenterAndExpand"
+                                              HorizontalOptions="FillAndExpand"                                                 
+                                              Time="{Binding Source={x:Static sys:DateTime.Now,Path=TimeOfDay}}" >
+                                                    <BLEntry:BorderLessTimePicker.HeightRequest>
+                                                        <OnPlatform x:TypeArguments="x:Double">
+                                                            <On Platform="iOS">40</On>
+                                                            <On Platform="Android">40</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:BorderLessTimePicker.HeightRequest>
+                                                    <BLEntry:BorderLessTimePicker.Margin>
+                                                        <OnPlatform x:TypeArguments="Thickness">
+                                                            <On Platform="iOS">2,0,5,0</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:BorderLessTimePicker.Margin>
+                                                </BLEntry:BorderLessTimePicker>
+                                                <!--Time="{Binding Source={x:Static sys:DateTime.Now}, Path=TimeOfDay}"-->
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                                <Grid Grid.Row="2">
+                                    <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="Gray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <autocomplete:SfAutoComplete 
+                                                         x:Name="illNessAutoSuggestion" 
+                                                          HeightRequest="40"
+                                                         HorizontalOptions="FillAndExpand"
+                                                           VerticalOptions="FillAndExpand"
+                                                          Watermark="Enter 'Illness' to filter suggestions"
+                                                          WatermarkColor="LightGray"
+                                                          BorderColor="#1976d2"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Button                                                                                 
+                            Text="SUBMIT"
+                                FontAttributes="Bold"
+                                FontSize="Default"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                BackgroundColor="#2D6694"
+                                x:Name="btnOtpSubmit"
+                                TextColor="White"                           
+                                HeightRequest="50"                        
+                                BorderWidth="2"                        
+                                WidthRequest="150"
+                                BorderRadius="5"
+                                BorderColor="#DDECF4"
+                                 Clicked="btnLoadDoctor_Clicked"
+                               />
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <ListView x:Name="listDoctorListByDept"
+                              HasUnevenRows="True"
+                              VerticalOptions="StartAndExpand"
+                              SeparatorColor="Transparent"
+                              HorizontalOptions="FillAndExpand"                           
+                      ItemTemplate="{StaticResource DoctorListListData}" />
+                </Grid>
+            </Grid>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

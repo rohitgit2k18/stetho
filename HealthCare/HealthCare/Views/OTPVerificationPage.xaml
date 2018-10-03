@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.OTPVerificationPage"
+              xmlns:BLEntry="clr-namespace:HealthCare.CustomeControls;assembly=HealthCare"
+               BackgroundColor="#0C83C8">
+    <ContentPage.Content>
+        <Grid x:Name="RootLayout" Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Image VerticalOptions="Center" HorizontalOptions="Center" Source="logo.png">
+                    <Image.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android,iOS">200</On>
+                        </OnPlatform>
+                    </Image.WidthRequest>
+                    <Image.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android,iOS">60</On>
+                        </OnPlatform>
+                    </Image.HeightRequest>
+                </Image>
+            </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                    <StackLayout Orientation="Vertical">
+                        <Label x:Name="otpMobileNoLbl" 
+                               VerticalOptions="Start"
+                                TextColor="White"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               Text="Enter One Time Password Here!"/>
+                        <Label x:Name="otpDescTxt" 
+                               VerticalOptions="Start"
+                               HorizontalOptions="Center"
+                                TextColor="White"
+                               HorizontalTextAlignment="Center"                              
+                               Text="we have send you an OTP to 9015277831 Please enter the same here!"/>
+                    </StackLayout>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                    <Grid VerticalOptions="Center" HorizontalOptions="FillAndExpand"  HeightRequest="60" BackgroundColor="White" Margin="10,0,10,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0" BackgroundColor="#20425F">
+                            <Label VerticalOptions="Center" HorizontalOptions="Center" Text="OTP" TextColor="White" FontAttributes="Bold"/>
+                        </Grid>
+                        <Grid Grid.Column="1" BackgroundColor="White">
+                            <BLEntry:BorderlessEntry 
+                    x:Name="entryoOtpNo"                   
+                    VerticalOptions="Center" 
+                    Margin="-60,0,0,0"
+                    Keyboard="Telephone"
+                                Text=""
+                                TextChanged="entryoOtpNo_TextChanged"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Enter OTP here"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    
+                </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                <Grid  VerticalOptions="Start">
+                <Button         Text="SUBMIT"
+                                FontAttributes="Bold"
+                                FontSize="Default"
+                                VerticalOptions="Start"
+                                HorizontalOptions="Center"
+                                BackgroundColor="#2D6694"
+                                x:Name="btnOtpSubmit"
+                                TextColor="White"                           
+                                HeightRequest="50"                        
+                                BorderWidth="2"                        
+                                WidthRequest="150"
+                                BorderRadius="5"
+                                BorderColor="#DDECF4"
+                                Clicked="btnOtpSubmit_Clicked"
+                               />
+                </Grid>
+                <Grid VerticalOptions="Center" >
+                    <Label VerticalOptions="Center" HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       Text="Edit Phone Number"
+                           x:Name="lbleditPhone"
+                       FontSize="Small"
+                       TextColor="White"/>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                          Tapped="lbleditPhone_Click"
+                       NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Grid>
+            </Grid>
+            </Grid>
+        </ContentPage.Content>
+    
+</ContentPage>

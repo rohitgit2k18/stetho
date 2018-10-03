@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HealthCare"
+             x:Class="HealthCare.Views.MainPage"
+             xmlns:BLEntry="clr-namespace:HealthCare.CustomeControls;assembly=HealthCare"
+              BackgroundColor="#0C83C8"
+             >
+    <ContentPage.Content>
+        <Grid x:Name="RootLayout" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Image VerticalOptions="End" HorizontalOptions="Center" Source="logo.png">
+                    <Image.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android,iOS">200</On>
+                        </OnPlatform>
+                    </Image.WidthRequest>
+                    <Image.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android,iOS">60</On>
+                        </OnPlatform>
+                    </Image.HeightRequest>
+                </Image>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid VerticalOptions="Center" HorizontalOptions="FillAndExpand"  HeightRequest="60" BackgroundColor="White" Margin="10,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" BackgroundColor="#20425F">
+                        <Image VerticalOptions="Center" HorizontalOptions="Center" Source="icon1.png"/>
+                    </Grid>
+                    <Grid Grid.Column="1" BackgroundColor="White">
+                        <BLEntry:BorderlessEntry 
+                    x:Name="entryPhoneNo"                   
+                    VerticalOptions="Center" 
+                    Margin="-60,0,0,0"
+                    Keyboard="Telephone"
+                            Text=""
+                    TextChanged="entryPhoneNo_TextChanged"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Enter Phone Number"/>
+                    </Grid>
+                </Grid>  
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackLayout Orientation="Vertical" Spacing="20">
+                <Button         Text="Login"
+                                FontAttributes="Bold"
+                                FontSize="Default"
+                                VerticalOptions="Start"
+                                HorizontalOptions="Center"
+                                BackgroundColor="#20425F"
+                                x:Name="btnphoneNoSubmit"
+                                TextColor="White"                           
+                                HeightRequest="50"                       
+                                BorderWidth="2"                        
+                                WidthRequest="300"
+                                BorderRadius="5"
+                                BorderColor="#DDECF4"
+                                Clicked="btnphoneNoSubmit_Clicked"
+                               />
+                    <Button     Text="Create New Stetho Account"                               
+                                FontSize="Default"                            
+                                HorizontalOptions="Center"
+                                BackgroundColor="#2dcc70"
+                                x:Name="btnphoneNoSubmit123"
+                                TextColor="White"                           
+                                HeightRequest="50"                       
+                                BorderWidth="2"                        
+                                WidthRequest="300"
+                                BorderColor="#2dcc70"
+                               Clicked="SignUp_Click"                                                           
+                               />
+                    <!--<Label Text="New here? Create an account" FontSize="Small"
+                           HorizontalOptions="Center"
+                           TextColor="White">-->
+                        <!--<Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                          Tapped="SignUp_Click"
+                       NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>-->
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

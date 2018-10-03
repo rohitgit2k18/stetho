@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.FilterOptionPage"
+             xmlns:BLEntry="clr-namespace:HealthCare.CustomeControls;assembly=HealthCare"
+             BackgroundColor="#E5E7EE"
+             Title="FilterOptionPage">
+    <ContentPage.Content>
+        <ContentView x:Name="HomecontentView" ControlTemplate="{StaticResource MainPageTemplate}">
+            <Grid x:Name="RootLayout" Margin="15,10,15,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.8*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Image VerticalOptions="Center" HorizontalOptions="Center" Source="arrow_left_1.png"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                          Tapped="btnBack_Click"
+                          NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Filter" TextColor="#3984B8" FontAttributes="Bold" FontSize="30" Margin="-50,0,0,0"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Frame HasShadow="true" Margin="5"  BackgroundColor="White">
+                            <Grid  BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image VerticalOptions="Center" Source="filter.png"/>
+                                        <Label VerticalOptions="Center" Text="Sort By">
+                                            <Label.FontSize>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">12</On>
+                                                </OnPlatform>
+                                            </Label.FontSize>
+                                        </Label>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Switch x:Name="Switchdate" IsToggled="True" Toggled="Switchdate_Toggled"/>
+                                        <Label VerticalOptions="Center" Text="Date">
+                                            <Label.FontSize>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">12</On>
+                                                </OnPlatform>
+                                            </Label.FontSize>
+                                        </Label>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Switch x:Name="switchOrder" IsToggled="False" Toggled="switchOrder_Toggled" />
+                                        <Label VerticalOptions="Center" Text="Order">
+                                            <Label.FontSize>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">12</On>
+                                                </OnPlatform>
+                                            </Label.FontSize>
+                                        </Label>
+                                    </StackLayout>
+                                </Grid>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Frame HasShadow="true" Margin="5"  BackgroundColor="White">
+                            <Grid  BackgroundColor="White">
+                                <StackLayout Orientation="Vertical" Spacing="10">
+                                    <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="LightGray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image Margin="10,0,0,0" VerticalOptions="Center" Source="doc.png"/>
+                                            <BLEntry:BorderlessEntry 
+                                                        x:Name="entryDocname"                   
+                                                        VerticalOptions="Center"                                                         
+                                                        HorizontalTextAlignment="Start"
+                                                        HorizontalOptions="FillAndExpand" 
+                                                        Placeholder="Doctor Name">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="LightGray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image Margin="10,0,0,0" VerticalOptions="Center" Source="building.png"/>
+                                            <BLEntry:BorderlessEntry 
+                                                        x:Name="entryClinicname"                   
+                                                        VerticalOptions="Center"                                                         
+                                                        HorizontalTextAlignment="Start"
+                                                        HorizontalOptions="FillAndExpand" 
+                                                        Placeholder="Clinic Name">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HeightRequest="60" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                        <Image VerticalOptions="Center" Source="check_1.png"/>
+                        <Label Text="Apply" FontAttributes="Bold" TextColor="#3984B8" FontSize="Large" VerticalOptions="Center"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                          Tapped="btnApply_Click"
+                       NumberOfTapsRequired="1" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

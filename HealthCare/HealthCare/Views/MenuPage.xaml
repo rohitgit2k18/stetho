@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:SetMain="clr-namespace:HealthCare.Views;assembly=HealthCare"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="HealthCare.Views.MenuPage"
+                  Title="MenuPage">
+    
+              <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="White">
+            <Grid x:Name="RootLayout" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0"  BackgroundColor="White">
+                    <StackLayout Orientation="Vertical" Margin="0,30,0,0" Spacing="0">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <controls:CircleImage x:Name="imgProfile" Source="docImage.jpg">
+                                <controls:CircleImage.VerticalOptions>
+                                    <OnPlatform x:TypeArguments="LayoutOptions">
+                                        <On Platform="Android">FillAndExpand</On>
+                                        <On Platform="WinPhone">FillAndExpand</On>
+                                    </OnPlatform>
+                                </controls:CircleImage.VerticalOptions>
+                                <controls:CircleImage.HorizontalOptions>
+                                    <OnPlatform x:TypeArguments="LayoutOptions">
+                                        <On Platform="Android">FillAndExpand</On>
+                                        <On Platform="iOS">CenterAndExpand</On>
+                                        <On Platform="WinPhone">FillAndExpand</On>
+                                    </OnPlatform>
+                                </controls:CircleImage.HorizontalOptions>
+                                <controls:CircleImage.Aspect>
+                                    <OnPlatform x:TypeArguments="Aspect">
+                                        <On Platform="Android">AspectFill</On>
+                                        <On Platform="iOS">AspectFill</On>
+                                        <On Platform="WinPhone">AspectFill</On>
+                                    </OnPlatform>
+                                </controls:CircleImage.Aspect>
+                                <controls:CircleImage.WidthRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android, iOS">100</On>
+                                    <On Platform="WinPhone">75</On>
+                                </OnPlatform>
+                            </controls:CircleImage.WidthRequest>
+                            <controls:CircleImage.HeightRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android, iOS">100</On>
+                                    <On Platform="WinPhone">75</On>
+                                </OnPlatform>
+                            </controls:CircleImage.HeightRequest>
+                        </controls:CircleImage>
+                            
+                        </StackLayout>
+                        <Label HorizontalOptions="Center" x:Name="lblUserName" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="James Smith" TextColor="#3785C0" FontSize="Medium"/>
+                        <Label x:Name="lblUserLocation" HorizontalOptions="Center" HorizontalTextAlignment="Center"  Text="New Delhi" TextColor="Gray" FontSize="Small"/>
+                        <!--<Label x:Name="lblUserPin" HorizontalOptions="Center" HorizontalTextAlignment="Center"  Text="PIN:110008" TextColor="Gray" FontSize="Small"/>-->
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="0">
+                    <Image VerticalOptions="Start" x:Name="imgEdit" HorizontalOptions="End" Source="edit2.png" Margin="0,30,10,0"/>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                          Tapped="imgedit_Click"
+                       NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Grid>
+                <ListView x:Name="NavigationList" ItemSelected="NavigationList_ItemSelected" Grid.Row="1" Margin="0,20,0,0" RowHeight="50"   SeparatorVisibility="Default" SeparatorColor="#488CC8"  VerticalOptions="Start">
+                        <!--<ListView.Behaviors>
+                          <behaviors:ListViewBehavior Command="{Binding ListViewItemSelected}"/>
+                        </ListView.Behaviors>-->
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell  Height="100">
+                                <Grid ColumnSpacing="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.2*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Source="{Binding Icon}"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <Label VerticalOptions="Center" HorizontalOptions="Start" TextColor="#488CC8" FontSize="Medium" Text="{Binding Name}"/>
+                                    </Grid>
+                                </Grid>
+                                    <!--<StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Spacing="10">
+                                        <Image VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Source="{Binding Icon}"/>
+                                        <Label VerticalOptions="Center"  FontSize="Medium" Text="{Binding Name}"/>
+                                    </StackLayout>-->
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+               
+                <!--<Grid Grid.Row="1" BackgroundColor="White">
+                    <Label Text="Home" FontSize="Micro" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                          Tapped="lblHome_Click"
+                       NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Grid>
+                <Grid Grid.Row="2" BackgroundColor="White">
+                    <Label Text="Prescriptions"  TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                          Tapped="lblPrescriptions_Click"
+                       NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Grid>
+                <Grid Grid.Row="3" BackgroundColor="White">
+                    <Label Text="Appointments"  TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                          Tapped="lblAppointments_Click"
+                       NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Grid>
+                <Grid Grid.Row="4" BackgroundColor="White">
+                    <Label Text="Logout"  TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                          Tapped="lblLogout_Click"
+                       NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Grid>-->
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <SetMain:HomePage/>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

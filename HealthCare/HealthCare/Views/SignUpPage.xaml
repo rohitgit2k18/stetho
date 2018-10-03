@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:sys="clr-namespace:System;assembly=mscorlib"
+              xmlns:BLEntry="clr-namespace:HealthCare.CustomeControls;assembly=HealthCare"  
+             x:Class="HealthCare.Views.SignUpPage"
+             BackgroundColor="White"
+       >
+    <ContentPage.Content>
+        <Grid x:Name="RootLayout">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height=" 50"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="#2E6B98">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Image Source="back.png"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer
+                          Tapped="BackButton_Click"
+                       NumberOfTapsRequired="1" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+                <Grid Grid.Column="1" >
+                    <Label  Text="Sign Up" 
+                                    TextColor="White"
+                                    FontSize="Medium"
+                            Margin="-50,0,0,0"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalOptions="Center" />
+                </Grid>
+            </Grid>
+            <!--<Grid Grid.Row="1">
+                <Image Source="logo.png"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Center" />
+            </Grid>-->
+            <ScrollView Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Margin="0,0,-10,0">
+            <Grid >
+                    <Frame HasShadow="true" Margin="15" CornerRadius="5">
+                        <Grid RowSpacing="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <BLEntry:BorderlessEntry x:Name="txtFisrtName"
+                                                 VerticalOptions="FillAndExpand"
+                                                                 Placeholder="First Name*"
+                                                                 PlaceholderColor="#2E6B98"
+                                                                 TextColor="#2E6B98"
+                                                                  FontSize="Small"
+                                                                 Text="{Binding FirstName}"
+                                                 HorizontalOptions="FillAndExpand">
+                                            <BLEntry:BorderlessEntry.HeightRequest>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">40</On>
+                                                    <On Platform="Android">40</On>
+                                                </OnPlatform>
+                                            </BLEntry:BorderlessEntry.HeightRequest>
+                                        </BLEntry:BorderlessEntry>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <BLEntry:BorderlessEntry x:Name="dateOfAppointmentf"
+                                                 VerticalOptions="FillAndExpand"
+                                                                 Placeholder="Middle Name"
+                                                                 PlaceholderColor="#2E6B98"
+                                                                 TextColor="#2E6B98"
+                                                                FontSize="Small"
+                                                                 Text="{Binding MiddelName}"
+                                                 HorizontalOptions="FillAndExpand">
+                                            <BLEntry:BorderlessEntry.HeightRequest>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                </OnPlatform>
+                                            </BLEntry:BorderlessEntry.HeightRequest>
+                                           
+                                        </BLEntry:BorderlessEntry>
+                                        <!--Time="{Binding Source={x:Static sys:DateTime.Now}, Path=TimeOfDay}"-->
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                <BLEntry:BorderlessEntry x:Name="txtLastName" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Last Name*"
+                                                         PlaceholderColor="#2E6B98"
+                                                         TextColor="#2E6B98"
+                                                         FontSize="Small"
+                                                         Text="{Binding LastName}"
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                    <BLEntry:BorderlessEntry.HeightRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="iOS">40</On>
+                                            <On Platform="Android">40</On>
+                                        </OnPlatform>
+                                    </BLEntry:BorderlessEntry.HeightRequest>
+                                </BLEntry:BorderlessEntry>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                <BLEntry:BorderlessEntry x:Name="txtemail" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Email*"
+                                                         PlaceholderColor="#2E6B98"
+                                                         TextColor="#2E6B98"                                                        
+                                                         Text="{Binding Email}"
+                                                         FontSize="Small"
+                                                         VerticalOptions="FillAndExpand" 
+                                                         TextChanged="txtreasonforvisit2_TextChanged"
+                                                         HorizontalOptions="FillAndExpand">
+                                    <BLEntry:BorderlessEntry.HeightRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="iOS">40</On>
+                                            <On Platform="Android">40</On>
+                                        </OnPlatform>
+                                    </BLEntry:BorderlessEntry.HeightRequest>
+                                </BLEntry:BorderlessEntry>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                <BLEntry:BorderlessEntry x:Name="txtPassword" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Password*"
+                                                         PlaceholderColor="#2E6B98"
+                                                         TextColor="#2E6B98"
+                                                         Text="{Binding Password}"
+                                                         FontSize="Small"
+                                                         IsPassword="True"
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                    <BLEntry:BorderlessEntry.HeightRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="iOS">40</On>
+                                            <On Platform="Android">40</On>
+                                        </OnPlatform>
+                                    </BLEntry:BorderlessEntry.HeightRequest>
+                                </BLEntry:BorderlessEntry>
+                            </StackLayout>
+                        </Grid>
+                            <Grid Grid.Row="4">
+                            <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                    <BLEntry:BorderlessEntry x:Name="txtPhoneNo" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Mobile Number*"
+                                                         PlaceholderColor="#2E6B98"                                                             
+                                                         TextColor="#2E6B98"
+                                                             Keyboard="Telephone"
+                                                             FontSize="Small"
+                                                         Text="{Binding PhoneNo}"
+                                                             TextChanged="txtPhoneNo_TextChanged"
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                        <BLEntry:BorderlessEntry.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="iOS">40</On>
+                                                <On Platform="Android">40</On>
+                                            </OnPlatform>
+                                        </BLEntry:BorderlessEntry.HeightRequest>
+                                    </BLEntry:BorderlessEntry>
+                                </StackLayout>
+                            </Grid>
+                            <Grid Grid.Row="5">
+                            <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                        <BLEntry:BorderLessPicker x:Name="GenderPicker"
+                                                 VerticalOptions="FillAndExpand"
+                                                                TextColor="#2E6B98"   
+                                                                  Title="Gender*"                                                                    
+                                                                  SelectedIndexChanged="GenderPicker_SelectedIndexChanged"
+                                                 HorizontalOptions="FillAndExpand">
+                                            <BLEntry:BorderLessPicker.Items>
+                                                <x:String>Male</x:String>
+                                                <x:String>Female</x:String>
+                                                <x:String>Other</x:String>
+                                            </BLEntry:BorderLessPicker.Items>
+                                            <BLEntry:BorderlessEntry.HeightRequest>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">40</On>
+                                                    <On Platform="Android">40</On>
+                                                </OnPlatform>
+                                            </BLEntry:BorderlessEntry.HeightRequest>
+                                           
+                                        </BLEntry:BorderLessPicker>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                            <Grid Grid.Row="6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Label Text="Enter D.O.B :" 
+                                           VerticalOptions="FillAndExpand"
+                                           HorizontalOptions="FillAndExpand"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Start"
+                                           FontAttributes="Bold"                                          
+                                           FontSize="Small"
+                                           TextColor="#2D6694"/>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <BLEntry:BorderlessDatePicker x:Name="dateOfBirth"
+                                               MaximumDate="{x:Static sys:DateTime.Now}"              
+                                                 VerticalOptions="CenterAndExpand"                                                                          
+                                                 HorizontalOptions="FillAndExpand"  
+                                                 TextColor="#2E6B98"                     
+                                                Date="{x:Static sys:DateTime.Now}"
+                                                 >
+                                                <BLEntry:BorderlessDatePicker.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessDatePicker.HeightRequest>
+                                                <BLEntry:BorderlessDatePicker.Margin>
+                                                    <OnPlatform x:TypeArguments="Thickness">
+                                                        <On Platform="iOS">2,0,5,0</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessDatePicker.Margin>
+                                             <!--<DatePicker.MinimumDate>
+                                                        <sys:DateTime x:FactoryMethod="Parse">
+                                                            <x:Arguments>
+                                                                <x:String>Jan 1 2000</x:String>
+                                                            </x:Arguments>
+                                                        </sys:DateTime>
+                                                    </DatePicker.MinimumDate>
+                                                      <DatePicker.MaximumDate>
+                                                        <sys:DateTime x:FactoryMethod="Parse">
+                                                            <x:Arguments>
+                                                                <x:String>Dec 31 2090</x:String>
+                                                            </x:Arguments>
+                                                        </sys:DateTime>
+                                                    </DatePicker.MaximumDate>-->
+
+                                            </BLEntry:BorderlessDatePicker>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="7">
+                            <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                <BLEntry:BorderlessEntry x:Name="txtAddress" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Address*"
+                                                         PlaceholderColor="#2E6B98"
+                                                         TextColor="#2E6B98"
+                                                         FontSize="Small"
+                                                         Text="{Binding Address}"
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                    <BLEntry:BorderlessEntry.HeightRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="iOS">40</On>
+                                            <On Platform="Android">40</On>
+                                        </OnPlatform>
+                                    </BLEntry:BorderlessEntry.HeightRequest>
+                                </BLEntry:BorderlessEntry>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Row="8">
+                            <StackLayout Orientation="Vertical" Padding="1,1,1,1" BackgroundColor="#2E6B98">
+                                <BLEntry:BorderlessEntry x:Name="txtPostalcode" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Postal Code*"
+                                                         PlaceholderColor="#2E6B98"
+                                                         TextColor="#2E6B98"
+                                                         Keyboard="Telephone"
+                                                        Text="{Binding PostalCode}"
+                                                         FontSize="Small"
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                    <BLEntry:BorderlessEntry.HeightRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="iOS">40</On>
+                                                <On Platform="Android">40</On>
+                                        </OnPlatform>
+                                    </BLEntry:BorderlessEntry.HeightRequest>
+                                </BLEntry:BorderlessEntry>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+                </Frame>
+            </Grid>
+            </ScrollView>
+            <Grid Grid.Row="2">
+                <Button         Text="SUBMIT"
+                                FontAttributes="Bold"
+                                FontSize="Default"
+                                VerticalOptions="Start"
+                                HorizontalOptions="Center"
+                                BackgroundColor="#2D6694"
+                                x:Name="RegisterUserSubmit"
+                                TextColor="White"                           
+                                HeightRequest="50"                       
+                                BorderWidth="2"                        
+                                WidthRequest="300"
+                                BorderRadius="5"
+                                BorderColor="#DDECF4"
+                               Clicked="RegisterUserSubmit_Clicked"
+                               />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

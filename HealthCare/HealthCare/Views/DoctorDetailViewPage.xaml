@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="HealthCare.Views.DoctorDetailViewPage"
+             Title="DoctorDetailViewPage">
+    <ContentPage.Content>
+    <ContentView x:Name="HomecontentView" ControlTemplate="{StaticResource MainPageTemplate}">
+            <Grid x:Name="RootLayout" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Frame HasShadow="true" Grid.Row="0" Margin="5">
+                    <Grid  RowSpacing="0" ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.6*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <controls:CircleImage x:Name="ImageDocPic" Source="docImage.jpg"  Margin="0,0,0,10"  Aspect="AspectFit" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <controls:CircleImage.WidthRequest>
+                                    <OnPlatform x:TypeArguments="x:Double">
+                                        <On Platform="Android, iOS">55</On>
+                                        <On Platform="WinPhone">75</On>
+                                    </OnPlatform>
+                                </controls:CircleImage.WidthRequest>
+                                <controls:CircleImage.HeightRequest>
+                                    <OnPlatform x:TypeArguments="x:Double">
+                                        <On Platform="Android, iOS">55</On>
+                                        <On Platform="WinPhone">75</On>
+                                    </OnPlatform>
+                                </controls:CircleImage.HeightRequest>
+                            </controls:CircleImage>
+                            <!--<Image x:Name="imgProfielPic"                              
+                               HorizontalOptions="Center"
+                                Aspect="AspectFit"                             
+                               HeightRequest="60"
+                               VerticalOptions="Start"
+                               WidthRequest="60"
+                               Source="profile.png"/>-->
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                            <StackLayout Orientation="Vertical" Spacing="0">
+                                <Label x:Name="lbldocname"                                 
+                                   HorizontalTextAlignment="Start"
+                                   Text="Dr.James Smith" FontSize="Medium" FontAttributes="Bold" TextColor="#3785C0"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label                                                                  
+                                               Text="MBBS,"
+                                        x:Name="LblDocQuali"
+                                               FontAttributes="Bold"
+                                               FontSize="Small"
+                                         LineBreakMode="NoWrap"
+                                               TextColor="Gray"/>
+                                    <Label x:Name="LblDept"                                                                  
+                                               Text="MD-Dermatology"   
+                                            LineBreakMode="TailTruncation"
+                                               FontSize="Small"
+                                               TextColor="Gray"/>
+                                </StackLayout>
+                                <Label x:Name="LblHospitalName"                                                                  
+                                               Text="LifeLine BroadWay Hospital"  
+                                               FontAttributes="Bold"
+                                               FontSize="Small"
+                                               TextColor="Gray"/>
+                            </StackLayout>
+                        </Grid>
+                        <Grid Grid.Column="2">
+                            <Image VerticalOptions="Start" Source="profile_2.png" HorizontalOptions="Center"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+                <Grid Grid.Row="1">
+                    <syncfusion:SfSchedule x:Name="schedule" 
+                                           CellTapped="schedule_CellTapped"                                         
+                                           ScheduleView="WeekView">
+                        <syncfusion:SfSchedule.HeaderStyle>
+                            <syncfusion:HeaderStyle
+				           BackgroundColor="#FADBD8" 				         
+			          	TextStyle="15" />
+                        </syncfusion:SfSchedule.HeaderStyle>
+                    </syncfusion:SfSchedule>
+                </Grid>
+            </Grid>
+    </ContentView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,151 @@
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.dll.config
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.pdb
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Newtonsoft.Json.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Extensions.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Primitives.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Platform.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.dll
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Newtonsoft.Json.xml
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.xml
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.pdb
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.xml
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.xml
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Extensions.xml
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Primitives.xml
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.pdb
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.xml
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Platform.pdb
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.pdb
+G:/client project xamarin/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.xml
+G:/client project xamarin/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csproj.App.config
+G:/client project xamarin/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csprojResolveAssemblyReference.cache
+G:/client project xamarin/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.dll
+G:/client project xamarin/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.dll.config
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Newtonsoft.Json.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.Abstractions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.Abstractions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Extensions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Primitives.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Newtonsoft.Json.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.Abstractions.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.Abstractions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.Abstractions.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.Abstractions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Extensions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Primitives.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csproj.App.config
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csproj.CoreCompileInputs.cache
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csprojResolveAssemblyReference.cache
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.dll.config
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/HealthCare_API.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Newtonsoft.Json.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.Abstractions.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.Abstractions.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Extensions.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Primitives.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Newtonsoft.Json.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.Abstractions.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Media.Abstractions.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Settings.Abstractions.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.Abstractions.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Plugin.Share.Abstractions.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Extensions.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/System.Net.Http.Primitives.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Core.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csproj.App.config
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csprojResolveAssemblyReference.cache
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.csproj.CoreCompileInputs.cache
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.dll
+/Users/vinove/Desktop/Rohit/HealthCare/HealthCare_API/obj/Debug/HealthCare_API.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\HealthCare_API.dll.config
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\HealthCare_API.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\HealthCare_API.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Newtonsoft.Json.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Media.Abstractions.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Media.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Settings.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Share.Abstractions.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Share.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\System.Net.Http.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\System.Net.Http.Extensions.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\System.Net.Http.Primitives.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Xamarin.Forms.Core.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Newtonsoft.Json.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Media.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Media.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Media.Abstractions.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Media.Abstractions.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Settings.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Settings.Abstractions.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Share.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Share.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Share.Abstractions.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Plugin.Share.Abstractions.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\System.Net.Http.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\System.Net.Http.Extensions.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\System.Net.Http.Primitives.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Xamarin.Forms.Core.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\obj\Debug\HealthCare_API.csproj.App.config
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\obj\Debug\HealthCare_API.csproj.CoreCompileInputs.cache
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\obj\Debug\HealthCare_API.dll
+D:\Rohit-Code\ClientProject\ASIF-Xamarin&Web\Asif-Admin&API\HealthCare\HealthCare_API\obj\Debug\HealthCare_API.pdb

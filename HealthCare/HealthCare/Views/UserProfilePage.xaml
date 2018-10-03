@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="HealthCare.Views.UserProfilePage"
+              Title="UserProfilePage"
+             BackgroundColor="#E5E7EE">
+    <ContentPage.Content>
+        <ContentView x:Name="HomecontentView" ControlTemplate="{StaticResource MainPageTemplate }">
+            <ScrollView>
+            <Grid x:Name="RootLayout" Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Grid.RowSpan="1">
+                 <!--<Image VerticalOptions="Start" HeightRequest="120" WidthRequest="120" Margin="0,0,0,-80" HorizontalOptions="Center" Source="docImage.jpg"/>-->
+                </Grid>
+                
+                <Grid Grid.Row="1">
+                    <Frame HasShadow="true" Margin="5"  Padding="-20,0,-20,0">
+                        <Grid  Margin="20,20,20,0" RowSpacing="1" BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                        <Image x:Name="imgedit" VerticalOptions="Center" HorizontalOptions="End" Margin="0,0,10,0" Source="edit2.png"/>
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                         Tapped="imgEdit_Click"
+                                         NumberOfTapsRequired="1" />
+                                        </Image.GestureRecognizers>
+                                    </Grid>
+                                    <Grid Grid.Row="1" Margin="0,10,0,0">
+                                        <StackLayout Orientation="Vertical">
+                                            <Label  x:Name="txtFullname" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="James Smith" FontAttributes="Bold" FontSize="Medium" TextColor="#3785C0"/>
+                                            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+                                            <Label VerticalOptions="Center" x:Name="lblPIN"   VerticalTextAlignment="Center" Text="PIN:110091" FontSize="Small" TextColor="Gray"/>
+                                                <Label VerticalOptions="Center" x:Name="lblPinUpdate"   VerticalTextAlignment="Center" Text="EditPin" FontSize="Small" TextColor="#2E6B98"></Label>
+                                            </StackLayout>-->
+                                        </StackLayout>
+                                    </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1" BackgroundColor="#F0F0F0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <Image VerticalOptions="Center" HorizontalOptions="Center" Source="email.png"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <StackLayout Orientation="Horizontal" Spacing="10">
+                                            <Label VerticalOptions="Center" Text="Email:" FontSize="Small" TextColor="Gray"/>
+                                            <Label x:Name="txtEmail" VerticalOptions="Center" Text="james@email.com" LineBreakMode="TailTruncation" FontSize="Small" TextColor="Gray"/>
+                                        </StackLayout>
+                                    </Grid>
+                            </Grid>
+                            <Grid Grid.Row="2" BackgroundColor="#F0F0F0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <Image VerticalOptions="Center" HorizontalOptions="Center" Source="location.png"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <StackLayout Orientation="Horizontal" Spacing="10">
+                                            <Label VerticalOptions="Center" Text="Location:" FontSize="Small" TextColor="Gray"/>
+                                            <Label x:Name="txtLocation" VerticalOptions="Center" Text="New Delhi" FontSize="Small" TextColor="Gray"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                            <Grid Grid.Row="3" BackgroundColor="#F0F0F0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <Image VerticalOptions="Center" HorizontalOptions="Center" Source="gender.png"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <StackLayout Orientation="Horizontal" Spacing="10">
+                                            <Label VerticalOptions="Center" Text="Gender:" FontSize="Small" TextColor="Gray"/>
+                                            <Label x:Name="txtgender" VerticalOptions="Center" Text="Male" FontSize="Small" TextColor="Gray"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                            <Grid Grid.Row="4" BackgroundColor="#F0F0F0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <Image VerticalOptions="Center" HorizontalOptions="Center" Source="phone.png"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <StackLayout Orientation="Horizontal" Spacing="10">
+                                            <Label VerticalOptions="Center" Text="Phone No.:" FontSize="Small" TextColor="Gray"/>
+                                            <Label x:Name="txtPhoneNo" VerticalOptions="Center" Text="9811878935" FontSize="Small" TextColor="Gray"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                            <Grid Grid.Row="5" BackgroundColor="#F0F0F0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <Image VerticalOptions="Center" HorizontalOptions="Center" Source="cal_1.png"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <StackLayout Orientation="Horizontal" Spacing="10">
+                                            <Label VerticalOptions="Center" Text="Date of Birth:" FontSize="Small" TextColor="Gray"/>
+                                            <Label x:Name="txtDOB" VerticalOptions="Center" Text="30 jan 1980" FontSize="Small" TextColor="Gray"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                            
+                        </Grid>
+                    </Frame>
+                </Grid>
+                    <Grid Grid.Row="1" BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="Center">
+                        <!--<Image VerticalOptions="Start" HeightRequest="120" WidthRequest="120" Margin="0,-60,0,0" HorizontalOptions="Center" Source="docImage.jpg"/>-->
+                        <controls:CircleImage Source="docImage.jpg"   x:Name="imgProfile" BorderColor="White" BorderThickness="4"  Margin="0,-60,0,0"  Aspect="AspectFill" VerticalOptions="Start" HorizontalOptions="Center">
+                            <controls:CircleImage.WidthRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android, iOS">120</On>
+                                    <On Platform="WinPhone">75</On>
+                                </OnPlatform>
+                            </controls:CircleImage.WidthRequest>
+                            <controls:CircleImage.HeightRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android, iOS">120</On>
+                                    <On Platform="WinPhone">75</On>
+                                </OnPlatform>
+                            </controls:CircleImage.HeightRequest>
+                        </controls:CircleImage>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

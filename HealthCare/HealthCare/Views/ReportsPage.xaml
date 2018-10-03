@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:selector="clr-namespace:HealthCare.Models;assembly=HealthCare"
+             x:Class="HealthCare.Views.ReportsPage"
+             Title="ReportsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="LoadReportsTemplate">
+                <ViewCell Height="120">
+                    <Frame HasShadow="true" Margin="5">
+                        <Grid  RowSpacing="0" ColumnSpacing="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Image x:Name="imgProfielPic"                              
+                               HorizontalOptions="Center"                                     
+                                Aspect="AspectFill" 
+                                       HeightRequest="60"
+                                       WidthRequest="50"
+                               VerticalOptions="Center"                             
+                               Source="menu_icon1.png"/>
+                            </Grid>
+                            <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                                <StackLayout Orientation="Vertical">
+                                    <Label x:Name="lblReportname"                                 
+                                   HorizontalTextAlignment="Start"
+                                           FontAttributes="Bold"
+                                           FontSize="Medium"
+                                           TextColor="#3782BB"
+                                   Text="{Binding ReportName}"/>
+                                    <Label x:Name="lblHospitalName"                                 
+                                   HorizontalTextAlignment="Start"
+                                           TextColor="Gray"
+                                   Text="{Binding AddedBy,StringFormat='Add By {0}'}"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label x:Name="lblpreviousdate"                                 
+                                     VerticalOptions="Center"
+                                               TextColor="Gray"
+                                   Text="{Binding ReportDateTime,StringFormat='{0},'}"/>
+                                        <Label                                  
+                                     VerticalOptions="Center"
+                                            TextColor="Gray"
+                                   Text="{Binding ReportTime}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image x:Name="imgViewPic"                                                                                                                                               
+                               VerticalOptions="Center"  
+                                           Aspect="AspectFill"
+                               Source="eye.png">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer
+                          Tapped="imgViewPic_Click"
+                        CommandParameter="{Binding .}"
+                       NumberOfTapsRequired="1" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Image x:Name="imgDownloadPic"                                                                                                                                               
+                               VerticalOptions="Center"  
+                                           Aspect="AspectFill"
+                               Source="download.png">
+                                    <Image.GestureRecognizers>
+                                            <TapGestureRecognizer
+                          Tapped="imgDownloadPic_Click"
+                           CommandParameter="{Binding .}"
+                       NumberOfTapsRequired="1" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Image x:Name="imgSharePic"                                                                                                                                               
+                               VerticalOptions="Center"                               
+                                           Aspect="AspectFill"
+                               Source="share1.png">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                          Tapped="imgSharePic_Click"
+                          CommandParameter="{Binding .}"
+                       NumberOfTapsRequired="1" />
+                                    </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+            <selector:ReportListDataTemplateSelector x:Key="ReportListListData" LoadReportsTemplate="{StaticResource LoadReportsTemplate}"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ContentView x:Name="HomecontentView" ControlTemplate="{StaticResource MainPageTemplate}">
+            <Grid x:Name="RootLayout" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0"></Grid>
+                    <Grid Grid.Column="1">
+                        <Image x:Name="imgFilter"
+                               HeightRequest="50"
+                               WidthRequest="50"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End"
+                               Source="filter.png"/>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                          Tapped="imgFilter_Click"
+                       NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <ListView x:Name="listReportListByFilter"
+                              HasUnevenRows="True"
+                             IsPullToRefreshEnabled="True"
+                               SeparatorColor="Transparent"
+                      ItemTemplate="{StaticResource ReportListListData}" />
+                </Grid>
+            </Grid>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.EditProfilePage"
+                xmlns:sys="clr-namespace:System;assembly=mscorlib"
+              xmlns:ctrls="clr-namespace:AsNum.XFControls;assembly=AsNum.XFControls"
+             xmlns:BLEntry="clr-namespace:HealthCare.CustomeControls;assembly=HealthCare"
+               xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             Title="EditProfilePage"
+             BackgroundColor="#E5E7EE">
+    <ContentPage.Content>
+        <Grid x:Name="RootLayout">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="#2E6B98">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Image Source="back.png"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer                            
+                          Tapped="BackButton_Click"
+                       NumberOfTapsRequired="1" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+                <Grid Grid.Column="1" >
+                    <Label  Text="EDIT PROFILE" 
+                                    TextColor="White"
+                                    FontSize="Large"
+                            Margin="-50,0,0,0"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalOptions="Center" />
+                </Grid>
+            </Grid>
+            <ScrollView Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,0,-10,0">
+                <Grid Margin="15,0,25,0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" >
+                    </Grid>
+                    <Grid Grid.Row="1" >
+                    <Frame HasShadow="true"   Padding="-10,0,-10,0">
+                        <Grid  Margin="20,20,20,0" RowSpacing="1" BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                 <RowDefinition Height="2*"/> 
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" HeightRequest="80">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="1.2*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="1">
+                                        <!--<Image VerticalOptions="End" Margin="0,-10,0,0" HorizontalOptions="End" Aspect="AspectFill" Source="edit_image.png"/>-->
+                                    </Grid>
+                                    <!--<Grid.RowDefinitions>
+                                    <RowDefinition Height="0.5*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    --><!--<Image x:Name="imgedit" VerticalOptions="Center" HorizontalOptions="End" Margin="0,0,10,0" Source="edit2.png"/>-->
+                                    <!--<Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                         Tapped="imgEdit_Click"
+                                         NumberOfTapsRequired="1" />
+                                    </Image.GestureRecognizers>--><!--
+                                </Grid>
+                                <Grid Grid.Row="1" Margin="0,0,0,0">
+                                    <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                                        <Label  x:Name="txtFullname" HorizontalOptions="Center" HorizontalTextAlignment="Center"  Text="James Smith" FontAttributes="Bold" FontSize="Medium" TextColor="#3785C0"/>
+                                        <Label  x:Name="lblPIN" HorizontalOptions="Center" HorizontalTextAlignment="Center"  Text="PIN:110091" FontSize="Small" TextColor="Gray"/>
+                                    </StackLayout>
+                                </Grid>--> 
+                                
+                            </Grid>
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <StackLayout Orientation="Vertical" Padding="0,0,0,1" BackgroundColor="Gray">
+                                            <StackLayout Orientation="Horizontal"  BackgroundColor="White">
+                                                <Image VerticalOptions="Center"  Source="user.png"/>
+                                                <BLEntry:BorderlessEntry x:Name="txtFisrtName"
+                                                 VerticalOptions="FillAndExpand"
+                                                                 Placeholder="First Name*"
+                                                                 PlaceholderColor="LightGray"                                                                 
+                                                                 TextColor="Gray"                                                                 
+                                                                 Text="{Binding FirstName,Mode=TwoWay}"
+                                                                  FontSize="Medium"                                                                
+                                                 HorizontalOptions="FillAndExpand">
+                                                    <BLEntry:BorderlessEntry.HeightRequest>
+                                                        <OnPlatform x:TypeArguments="x:Double">
+                                                            <On Platform="iOS">40</On>
+                                                            <On Platform="Android">40</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:BorderlessEntry.HeightRequest>
+                                                </BLEntry:BorderlessEntry>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <StackLayout Orientation="Vertical"  Padding="0,0,0,1" BackgroundColor="Gray">
+                                            <StackLayout Orientation="Horizontal" Padding="0,0,0,0" BackgroundColor="White">
+                                                <Image VerticalOptions="Center" Source="user.png"/>
+                                                <BLEntry:BorderlessEntry x:Name="dateOfAppointmentf"
+                                                 VerticalOptions="FillAndExpand"
+                                                                 Placeholder="Middle Name"
+                                                                 PlaceholderColor="LightGray"
+                                                                 TextColor="Gray"
+                                                                  FontSize="Medium" 
+                                                                 Text="{Binding MiddelName,Mode=TwoWay}"
+                                                 HorizontalOptions="FillAndExpand">
+                                                    <BLEntry:BorderlessEntry.HeightRequest>
+                                                        <OnPlatform x:TypeArguments="x:Double">
+                                                            <On Platform="iOS">40</On>
+                                                            <On Platform="Android">40</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:BorderlessEntry.HeightRequest>
+
+                                                </BLEntry:BorderlessEntry>
+                                                <!--Time="{Binding Source={x:Static sys:DateTime.Now}, Path=TimeOfDay}"-->
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                                <Grid Grid.Row="2">
+
+                                    <!--<StackLayout Orientation="Vertical"  Padding="0,0,0,1" BackgroundColor="#2E6B98">-->
+                                    <StackLayout Orientation="Vertical" Padding="0,0,0,1" BackgroundColor="Gray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image VerticalOptions="Center" Source="user.png"/>
+                                            <BLEntry:BorderlessEntry x:Name="txtLastName" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Last Name*"
+                                                        PlaceholderColor="LightGray"
+                                                        TextColor="Gray"
+                                                              Text="{Binding LastName,Mode=TwoWay}"
+                                                                  FontSize="Medium"                                                       
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="3">
+                                    <StackLayout Orientation="Vertical" Padding="0,0,0,1" BackgroundColor="Gray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image VerticalOptions="Center" Source="mail.png"/>
+                                            <BLEntry:BorderlessEntry x:Name="txtemail" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Email*"
+                                                         PlaceholderColor="LightGray"
+                                                        TextColor="Gray"
+                                                             Keyboard="Email"
+                                                             Text="{Binding Email,Mode=TwoWay}"
+                                                                  FontSize="Medium" 
+                                                         VerticalOptions="FillAndExpand" 
+                                                          TextChanged="txtreasonforvisit2_TextChanged"  
+                                                         HorizontalOptions="FillAndExpand">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="4">
+                                    <StackLayout Orientation="Vertical" Padding="0,0,0,1" BackgroundColor="Gray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image VerticalOptions="Center" Source="lock.png"/>
+                                            <BLEntry:BorderlessEntry x:Name="txtPassword" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Password* (8 or more digits)"
+                                                         PlaceholderColor="LightGray"
+                                                         TextColor="Gray"
+                                                              Text="{Binding Password,Mode=TwoWay}"
+                                                                  FontSize="Medium" 
+                                                         IsPassword="True"
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="5">
+                                    <StackLayout Orientation="Vertical" Padding="0,0,0,1" BackgroundColor="Gray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image VerticalOptions="Center" Source="call.png"/>
+                                            <BLEntry:BorderlessEntry x:Name="txtPhoneNo" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Mobile Number*"
+                                                        PlaceholderColor="LightGray"                                                             
+                                                        TextColor="Gray"
+                                                              Text="{Binding PhoneNo,Mode=TwoWay}"
+                                                                  FontSize="Medium" 
+                                                             Keyboard="Numeric"
+                                                           TextChanged="txtPhoneNo_TextChanged"                                                                                                                     
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="6">
+                                    <!--<StackLayout Orientation="Horizontal" Spacing="15" Padding="0,10,0,05">
+                                        <Label Text="Gender*" TextColor="LightGray" FontSize="Medium"/>
+                                        <ctrls:RadioGroup  x:Name="RadioGenderCheck"                                                                                           
+                                          DisplayPath="Name"                                                          
+                                         Orientation="Horizontal"                                                       
+                                          OnImg="radio_close.png" 
+                                                            
+                                         OffImg="radio.png" />
+                                    </StackLayout>-->
+                                    <StackLayout Orientation="Vertical"  Padding="0,0,0,1" BackgroundColor="#2E6B98">
+                                <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                    <Image VerticalOptions="Center" Source="user.png"/>
+                                            <BLEntry:BorderLessPicker x:Name="GenderPicker"
+                                                 VerticalOptions="FillAndExpand"
+                                                                TextColor="Gray"   
+                                                                  Title="Gender*"  
+                                                                      SelectedIndexChanged="GenderPicker_SelectedIndexChanged"
+                                                 HorizontalOptions="FillAndExpand">
+                                        <BLEntry:BorderLessPicker.Items>
+                                            <x:String>Male</x:String>
+                                            <x:String>Female</x:String>
+                                                </BLEntry:BorderLessPicker.Items>
+                                        <BLEntry:BorderlessEntry.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="iOS">40</On>
+                                                <On Platform="Android">40</On>
+                                            </OnPlatform>
+                                        </BLEntry:BorderlessEntry.HeightRequest>
+
+                                    </BLEntry:BorderLessPicker>
+                                </StackLayout>
+                            </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="7">
+                                    <StackLayout Orientation="Vertical">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image VerticalOptions="Center" Source="cal2.png"/>
+                                            <Label Text="Date of Birth*" 
+                                           x:Name="lblDob"
+                                           FontSize="Medium"
+                                       HorizontalOptions="Start"
+                                           VerticalOptions="Center"
+                                           TextColor="LightGray"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Vertical"  Padding="0,0,0,1" BackgroundColor="Gray">
+                                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+
+                                                <BLEntry:DatePickerReg x:Name="dateOfBirth"
+                                               MaximumDate="{x:Static sys:DateTime.Now}"              
+                                                 VerticalOptions="CenterAndExpand"
+                                                 HorizontalOptions="FillAndExpand"  
+                                                 TextColor="Gray"  
+                                                  Date="{Binding DOB}"
+                                                 >
+                                                    <BLEntry:DatePickerReg.HeightRequest>
+                                                        <OnPlatform x:TypeArguments="x:Double">
+                                                            <On Platform="iOS">40</On>
+                                                            <On Platform="Android">40</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:DatePickerReg.HeightRequest>
+                                                    <BLEntry:DatePickerReg.Margin>
+                                                        <OnPlatform x:TypeArguments="Thickness">
+                                                            <On Platform="iOS">2,0,5,0</On>
+                                                        </OnPlatform>
+                                                    </BLEntry:DatePickerReg.Margin>
+                                                </BLEntry:DatePickerReg>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="8">
+                                    <StackLayout Orientation="Vertical" Padding="0,0,0,1" BackgroundColor="Gray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image VerticalOptions="Center" Source="home.png"/>
+                                            <BLEntry:BorderlessEntry x:Name="txtAddress" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Address*"
+                                                        PlaceholderColor="LightGray"
+                                                        TextColor="Gray"
+                                                              Text="{Binding Address,Mode=TwoWay}"
+                                                                  FontSize="Medium" 
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="9">
+                                    <StackLayout Orientation="Vertical" Padding="0,0,0,1" BackgroundColor="Gray">
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <Image VerticalOptions="Center" Source="location1.png"/>
+                                            <BLEntry:BorderlessEntry x:Name="txtPostalcode" 
+                                                         BackgroundColor="White" 
+                                                         Placeholder="Postal Code*"
+                                                         PlaceholderColor="LightGray"
+                                                        TextColor="Gray"
+                                                             Text="{Binding PostalCode,Mode=TwoWay}"
+                                                                  FontSize="Medium" 
+                                                         Keyboard="Telephone"                                                    
+                                                        
+                                                         VerticalOptions="FillAndExpand" 
+                                                         HorizontalOptions="FillAndExpand">
+                                                <BLEntry:BorderlessEntry.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double">
+                                                        <On Platform="iOS">40</On>
+                                                        <On Platform="Android">40</On>
+                                                    </OnPlatform>
+                                                </BLEntry:BorderlessEntry.HeightRequest>
+                                            </BLEntry:BorderlessEntry>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Row="10" Margin="0,20,0,0">
+                                    <Button         Text="Submit"
+                                FontAttributes="Bold"
+                                FontSize="Default"
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand"
+                                BackgroundColor="#2D6694"
+                                x:Name="RegisterUserSubmit"
+                                TextColor="White"                           
+                                HeightRequest="48"                       
+                                BorderWidth="2"                                                       
+                                BorderRadius="5"
+                                BorderColor="#DDECF4" 
+                                Clicked="RegisterUserSubmit_Clicked"
+                               />
+                                </Grid>
+                            </Grid>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="1" BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="Center">
+                    <!--<Image VerticalOptions="Start" HeightRequest="120" WidthRequest="120" Margin="0,-60,0,0" HorizontalOptions="Center" Source="docImage.jpg"/>-->
+                        <controls:CircleImage Source="{Binding ProfilePicture}"   x:Name="imgProfile" BorderColor="White" BorderThickness="4"  Margin="0,-60,0,0"  Aspect="AspectFill" VerticalOptions="Start" HorizontalOptions="Center">
+                        <controls:CircleImage.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">120</On>
+                                <On Platform="WinPhone">75</On>
+                            </OnPlatform>
+                        </controls:CircleImage.WidthRequest>
+                        <controls:CircleImage.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">120</On>
+                                <On Platform="WinPhone">75</On>
+                            </OnPlatform>
+                        </controls:CircleImage.HeightRequest>
+                    </controls:CircleImage>
+                </Grid>
+                    <Grid Grid.Row="1"  BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="Center">
+                        <Image VerticalOptions="Start" Margin="50,20,0,0"  HorizontalOptions="Center" Aspect="AspectFill" Source="edit_image.png">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                         Tapped="imgEdit_Click"
+                                         NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

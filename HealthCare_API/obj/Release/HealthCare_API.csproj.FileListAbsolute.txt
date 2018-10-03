@@ -1,0 +1,122 @@
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/HealthCare_API.dll.config
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/HealthCare_API.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/HealthCare_API.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Newtonsoft.Json.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Media.Abstractions.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Media.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.Abstractions.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Share.Abstractions.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Share.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/System.Net.Http.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Extensions.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Primitives.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Core.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Platform.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Xaml.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Newtonsoft.Json.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Media.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Media.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Media.Abstractions.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Media.Abstractions.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.Abstractions.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.Abstractions.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Share.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Share.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Share.Abstractions.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Plugin.Share.Abstractions.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/System.Net.Http.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Extensions.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Primitives.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Core.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Core.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Xaml.pdb
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Xaml.xml
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/obj/Release/HealthCare_API.csproj.App.config
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/obj/Release/HealthCare_API.csprojResolveAssemblyReference.cache
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/obj/Release/HealthCare_API.csproj.CoreCompileInputs.cache
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/obj/Release/HealthCare_API.dll
+D:/Rohit-Code/ClientProject/ASIF-Xamarin&Web/HealthCare/HealthCare_API/obj/Release/HealthCare_API.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/HealthCare_API.dll.config
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/HealthCare_API.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/HealthCare_API.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Newtonsoft.Json.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Media.Abstractions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Media.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.Abstractions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Share.Abstractions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Share.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/System.Net.Http.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Extensions.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Primitives.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Core.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Platform.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Newtonsoft.Json.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Media.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Media.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Media.Abstractions.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Media.Abstractions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.Abstractions.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Settings.Abstractions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Share.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Share.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Share.Abstractions.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Plugin.Share.Abstractions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/System.Net.Http.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Extensions.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/System.Net.Http.Primitives.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Core.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Core.dll.mdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Core.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Xaml.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Xaml.dll.mdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/bin/Release/Xamarin.Forms.Xaml.xml
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Release/HealthCare_API.csproj.App.config
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Release/HealthCare_API.csproj.CoreCompileInputs.cache
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Release/HealthCare_API.dll
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Release/HealthCare_API.pdb
+/Users/vinove/Desktop/untitled folder/HealthCare/HealthCare_API/obj/Release/HealthCare_API.csprojResolveAssemblyReference.cache
+D:\HealthCare\HealthCare_API\bin\Release\HealthCare_API.dll.config
+D:\HealthCare\HealthCare_API\bin\Release\HealthCare_API.dll
+D:\HealthCare\HealthCare_API\bin\Release\HealthCare_API.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Newtonsoft.Json.dll
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Media.Abstractions.dll
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Media.dll
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Settings.Abstractions.dll
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Settings.dll
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Share.Abstractions.dll
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Share.dll
+D:\HealthCare\HealthCare_API\bin\Release\System.Net.Http.dll
+D:\HealthCare\HealthCare_API\bin\Release\System.Net.Http.Extensions.dll
+D:\HealthCare\HealthCare_API\bin\Release\System.Net.Http.Primitives.dll
+D:\HealthCare\HealthCare_API\bin\Release\Xamarin.Forms.Core.dll
+D:\HealthCare\HealthCare_API\bin\Release\Xamarin.Forms.Platform.dll
+D:\HealthCare\HealthCare_API\bin\Release\Xamarin.Forms.Xaml.dll
+D:\HealthCare\HealthCare_API\bin\Release\Newtonsoft.Json.xml
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Media.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Media.xml
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Media.Abstractions.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Media.Abstractions.xml
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Settings.xml
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Settings.Abstractions.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Settings.Abstractions.xml
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Share.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Share.xml
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Share.Abstractions.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Plugin.Share.Abstractions.xml
+D:\HealthCare\HealthCare_API\bin\Release\System.Net.Http.xml
+D:\HealthCare\HealthCare_API\bin\Release\System.Net.Http.Extensions.xml
+D:\HealthCare\HealthCare_API\bin\Release\System.Net.Http.Primitives.xml
+D:\HealthCare\HealthCare_API\bin\Release\Xamarin.Forms.Core.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Xamarin.Forms.Core.xml
+D:\HealthCare\HealthCare_API\bin\Release\Xamarin.Forms.Xaml.pdb
+D:\HealthCare\HealthCare_API\bin\Release\Xamarin.Forms.Xaml.xml
+D:\HealthCare\HealthCare_API\obj\Release\HealthCare_API.csproj.App.config
+D:\HealthCare\HealthCare_API\obj\Release\HealthCare_API.csprojResolveAssemblyReference.cache
+D:\HealthCare\HealthCare_API\obj\Release\HealthCare_API.csproj.CoreCompileInputs.cache
+D:\HealthCare\HealthCare_API\obj\Release\HealthCare_API.dll
+D:\HealthCare\HealthCare_API\obj\Release\HealthCare_API.pdb

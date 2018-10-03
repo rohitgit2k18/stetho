@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             x:Class="HealthCare.FilterReportsPopPage">
+    <pages:PopupPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+                <Setter Property="TextColor" Value="#7dbbe6"/>
+            </Style>
+        </ResourceDictionary>
+    </pages:PopupPage.Resources>
+    <ScrollView
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+        <AbsoluteLayout>
+            <Frame
+        x:Name="FrameContainer"        
+        HorizontalOptions="Center"
+        BackgroundColor="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Row="0" Grid.Column="0">
+                            <Label x:Name="LblSortBy"
+                                    Text="SortBy"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start" 
+                                   HorizontalTextAlignment="Start" 
+                                   VerticalTextAlignment="Center"/>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="0">
+                            <Label Text="Sort By Date" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="1">
+                            <Switch IsToggled="True"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="0">
+                            <Label Text="Sort By Order(A-Z)" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="1">
+                            <Switch IsToggled="True"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Label Text="Filter" VerticalOptions="Start" HorizontalOptions="Start"/>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Entry Placeholder="Doctor name" VerticalOptions="Center"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <Entry Placeholder="Clinic name" VerticalOptions="Center"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Submit" x:Name="btnSubmit"  BackgroundColor="#1E6792" Clicked="btnSubmit_Clicked"/>
+                            <Button Text="Cancel" x:Name="btnCancel"  BackgroundColor="#E53935" Clicked="btnCancel_Clicked"/>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+                <!--<StackLayout Orientation="Vertical">
+                    <Label Text="New PIN"                         
+                           TextColor="#1E6792"  
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center" 
+                           VerticalTextAlignment="End" 
+                           HorizontalTextAlignment="Center"/>
+                    <Entry x:Name="txtPin" 
+                                   Placeholder=" Enter PIN"
+                                       VerticalOptions="Center"
+                                        TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                                         FontSize="Medium"
+                                       HorizontalOptions="FillAndExpand"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Submit" x:Name="btnSubmit" BackgroundColor="#1E6792" Clicked="btnSubmit_Clicked"/>
+                        <Button Text="Cancel" x:Name="btnCancel" BackgroundColor="#E53935" Clicked="btnCancel_Clicked"/>
+                    </StackLayout>
+                </StackLayout>-->
+            </Frame>
+            <ContentView
+          AbsoluteLayout.LayoutFlags="PositionProportional"
+          AbsoluteLayout.LayoutBounds="1, 0, -1, -1">
+            </ContentView>
+        </AbsoluteLayout>
+    </ScrollView>
+</pages:PopupPage>

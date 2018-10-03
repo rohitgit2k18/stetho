@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"   
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="HealthCare.Views.HomePage"            
+             Title="HomePage">
+    <ContentView x:Name="HomecontentView" ControlTemplate="{StaticResource MainPageTemplate}">
+        <ScrollView Orientation="Vertical" Margin="0,0,-15,0">
+            <Grid x:Name="rootLayout"  Margin="15,15,30,0">
+                <Grid.RowSpacing>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="iOS">25</On>
+                    </OnPlatform>
+                </Grid.RowSpacing>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="180"/>
+                <RowDefinition Height="180"/>
+                <RowDefinition Height="180"/>
+                <RowDefinition Height="180"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                    <Frame HasShadow="true" Margin="5" HeightRequest="180" Padding="-20,0,-20,-20">
+                        <Grid  RowSpacing="0" ColumnSpacing="0" Margin="20,20,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" BackgroundColor="White" ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" >
+                                    <controls:CircleImage Source="docImage.jpg" x:Name="UserProfilePic" BorderThickness="2" BorderColor="White" Margin="0,0,0,10"  VerticalOptions="Start"
+                                                          HorizontalOptions="Center">
+                                        <controls:CircleImage.Aspect>
+                                            <OnPlatform x:TypeArguments="Aspect">
+                                                <On Platform="Android">AspectFill</On>
+                                                <On Platform="iOS">AspectFill</On>
+                                                <On Platform="WinPhone">AspectFill</On>
+                                            </OnPlatform>
+                                        </controls:CircleImage.Aspect>
+                                        <controls:CircleImage.WidthRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android">100</On>
+                                                <On Platform="iOS">100</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </controls:CircleImage.WidthRequest>
+                                        <controls:CircleImage.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android">100</On>
+                                                <On Platform="iOS">100</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </controls:CircleImage.HeightRequest>
+                                    </controls:CircleImage>
+                                </Grid>
+                                <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                                    <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                                        <StackLayout.Spacing>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android">0</On>
+                                                <On Platform="iOS">5</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </StackLayout.Spacing>
+                                        <Label x:Name="lblUserName"                                 
+                                   HorizontalTextAlignment="Start"
+                                       TextColor="#3785C0"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Text="James Smith"/>
+                                <Label HorizontalTextAlignment="Start"/>
+                                        <Label x:Name="lblUserLocation"                                 
+                                   HorizontalTextAlignment="Start"
+                                       FontSize="Default"
+                                       TextColor="Gray"
+                                   Text="Location:New Delhi"/>
+                                        <!--<Label x:Name="lblUserPin"                                 
+                                   HorizontalTextAlignment="Start"
+                                        FontSize="Default"
+                                       TextColor="Gray"
+                                   Text="PIN: 110008"/>-->
+                            </StackLayout>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                   
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1" BackgroundColor="#F0F0F0">
+                                <StackLayout Orientation="Horizontal" Spacing="5" VerticalOptions="CenterAndExpand" Padding="0,0,10,20"  HorizontalOptions="EndAndExpand">
+                                    <Label Text="Edit Profile" TextColor="#3785C0"   FontSize="Default"/>
+                                    <Image   Source="edit2.png"/>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                     Tapped="editProfile_Click"
+                                    NumberOfTapsRequired="1" />
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                </Frame>
+            </Grid>
+                <Grid Grid.Row="1">
+                    <Frame HasShadow="true" Margin="5" HeightRequest="180" Padding="-20,0,-20,-20">
+                        <Grid  RowSpacing="0" ColumnSpacing="0" Margin="20,20,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="60"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" BackgroundColor="White" ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.6*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" >
+                                    <Image Source="check_2.png"  Aspect="AspectFit" VerticalOptions="StartAndExpand"  HorizontalOptions="Center">
+                                        <Image.WidthRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android, iOS">55</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </Image.WidthRequest>
+                                        <Image.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android, iOS">55</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </Image.HeightRequest>
+                                    </Image>
+                                </Grid>
+                                <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                                    <StackLayout Orientation="Vertical">
+                                        <StackLayout.Spacing>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android">0</On>
+                                                <On Platform="iOS">5</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </StackLayout.Spacing>
+                                        <Label                                 
+                                   HorizontalTextAlignment="Start"
+                                       TextColor="#3785C0"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Text="Upcoming Appointment"/>
+                                        <Label HorizontalTextAlignment="Start"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label                                                                  
+                                       TextColor="Gray"
+                                       x:Name="Appointmentdate"
+                                       FontSize="Default"                                       
+                                       Text="09-jun-2017,"/>
+                                            <Label 
+                                       TextColor="Gray"
+                                       FontSize="Default"  
+                                       x:Name="AppointmentTme"
+                                       Text="10:30 AM"/>
+                                        </StackLayout>
+                                        
+                                        <Label                                  
+                                   HorizontalTextAlignment="Start"
+                                       FontSize="Default"
+                                       TextColor="Gray"
+                                            x:Name="lblreason4Visit"
+                                   Text="Followup Visit for Chestpain"/>
+                                        <Label                                 
+                                   HorizontalTextAlignment="Start"
+                                        FontSize="Default"
+                                            x:Name="LableHospitalName"
+                                       TextColor="Gray"
+                                   Text="LifeLine Hospital"/>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Column="2">
+
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1" BackgroundColor="#F0F0F0">
+                                <StackLayout Orientation="Horizontal" Spacing="5" VerticalOptions="CenterAndExpand" Padding="0,0,10,20"  HorizontalOptions="EndAndExpand">
+                                    <Label Text="View All" TextColor="#3785C0"  FontSize="Default"/>
+                                    <Image   Source="arrow_right.png"/>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer
+                          Tapped="Upcoming_Appointment_Click"
+                       NumberOfTapsRequired="1" />
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Frame HasShadow="true" Margin="5" HeightRequest="180" Padding="-20,0,-20,-20">
+                        <Grid  RowSpacing="0" ColumnSpacing="0" Margin="20,20,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="60"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" BackgroundColor="White" ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.6*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" >
+                                    <Image Source="profile_1.png"  Aspect="AspectFit" VerticalOptions="StartAndExpand"  HorizontalOptions="Center">
+                                        <Image.WidthRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android, iOS">55</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </Image.WidthRequest>
+                                        <Image.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android, iOS">55</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </Image.HeightRequest>
+                                    </Image>
+                                </Grid>
+                                <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                                    <StackLayout Orientation="Vertical">
+                                        <StackLayout.Spacing>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android">0</On>
+                                                <On Platform="iOS">5</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </StackLayout.Spacing>
+                                        <Label                                 
+                                   HorizontalTextAlignment="Start"
+                                       TextColor="#3785C0"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Text="Reports Added By HealthCity"/>
+                                        <Label HorizontalTextAlignment="Start"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label                                                                  
+                                       TextColor="Gray"
+                                       FontSize="Default"  
+                                                x:Name="LblReportdate"
+                                       Text="09-jun-2017,"/>
+                                            <Label 
+                                       TextColor="Gray"
+                                       FontSize="Default" 
+                                                 x:Name="LblReporttime"
+                                       Text="10:30 AM"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Column="2">
+
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1" BackgroundColor="#F0F0F0">
+                                <StackLayout Orientation="Horizontal" Spacing="5" VerticalOptions="CenterAndExpand" Padding="0,0,10,20"  HorizontalOptions="EndAndExpand">
+                                    <Label Text="View All" TextColor="#3785C0"  FontSize="Default"/>
+                                    <Image   Source="arrow_right.png"/>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer
+                          Tapped="Reports_Click"
+                       NumberOfTapsRequired="1" />
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            <Grid Grid.Row="3">
+                    <Frame HasShadow="true" Margin="5" Padding="-20,0,-20,-20">
+                        <Grid  RowSpacing="0" ColumnSpacing="0" Margin="20,20,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" BackgroundColor="White" ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.6*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" >
+                                    <Image Source="clock_1.png"  Aspect="AspectFit" VerticalOptions="StartAndExpand"  HorizontalOptions="Center">
+                                        <Image.WidthRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android, iOS">55</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </Image.WidthRequest>
+                                        <Image.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android, iOS">55</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </Image.HeightRequest>
+                                    </Image>
+                                </Grid>
+                                <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                                    <StackLayout Orientation="Vertical">
+                                        <StackLayout.Spacing>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="Android">0</On>
+                                                <On Platform="iOS">5</On>
+                                                <On Platform="WinPhone">75</On>
+                                            </OnPlatform>
+                                        </StackLayout.Spacing>
+                                        <Label                                 
+                                   HorizontalTextAlignment="Start"
+                                       TextColor="#3785C0"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Text="Pills Reminder"/>
+                                        <Label HorizontalTextAlignment="Start"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label                                                                  
+                                       TextColor="Gray"
+                                       FontSize="Default"  
+                                      x:Name="pillremindertime"
+                                       Text="06:45 PM,"/>
+                                            <Label 
+                                       TextColor="Gray"
+                                       FontSize="Default"  
+                                                x:Name="LblAllergy"
+                                       Text="Antiallergic"/>
+                                        </StackLayout>
+                                        <ListView x:Name="ListPillsReminder" RowHeight="20" HasUnevenRows="True" SeparatorColor="Transparent">
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <ViewCell Height="20">
+                                                        <StackLayout Orientation="Vertical">
+                                                            <StackLayout Orientation="Horizontal">
+                                                                <Label                                                                     
+                                                                     FontSize="Default"
+                                                                     TextColor="Gray"
+                                                                     Text="{Binding TabletName}"/>
+                                                                <Label                                                                     
+                                                                 FontSize="Default"
+                                                                 TextColor="#3785C0"
+                                                                  Text="{Binding Repetaion, StringFormat='{0}'}"/>
+                                                            </StackLayout>
+                                                        </StackLayout>
+                                                    </ViewCell>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+                                        <!--<StackLayout Orientation="Horizontal">
+                                            <Label                                                                  
+                                       TextColor="Gray"
+                                       FontSize="Default"                                       
+                                       Text="Ceterzine Tablets"/>
+                                            <Label 
+                                       TextColor="#3F7FB7"
+                                       FontSize="Default"                                       
+                                       Text="Twice"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label                                                                  
+                                       TextColor="Gray"
+                                       FontSize="Default"                                       
+                                       Text="Ceterzine Tablets"/>
+                                            <Label 
+                                       TextColor="#3F7FB7"
+                                       FontSize="Default"                                       
+                                       Text="Twice"/>
+                                        </StackLayout>-->
+                                    </StackLayout>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Frame>
+                </Grid>
+        </Grid>
+        </ScrollView>
+    </ContentView>
+</ContentPage>

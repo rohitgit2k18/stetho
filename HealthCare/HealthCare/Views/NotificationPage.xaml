@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.NotificationPage"
+             Title="NotificationPage">
+    <ContentPage.Content>
+        <ContentView x:Name="HomecontentView" ControlTemplate="{StaticResource MainPageTemplate}">
+            <ListView x:Name="ListNotification"  HasUnevenRows="True" SeparatorColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="120">
+                            <Frame HasShadow="true" Margin="5">
+                                
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>
